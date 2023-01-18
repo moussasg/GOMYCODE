@@ -1,7 +1,6 @@
 import "./App.css"
 import ItemCard from "./components/ItemCard"
 import { products } from "./products"
-
 function App() {
 	return (
 		<div className="App">
