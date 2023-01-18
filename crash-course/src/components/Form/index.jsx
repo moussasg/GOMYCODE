@@ -1,5 +1,4 @@
 import React from "react"
-
 export default function Form({ children }) {
 	const handleChange = (event) => {
 		console.log(event.target.value)
