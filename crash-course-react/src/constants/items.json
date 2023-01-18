@@ -1,21 +1,22 @@
-[{ 
-        "id": 1,
-        "name": "React",
-        "image": "/src/assets/react.svg"
-    },
-    {
-        "id": 2,
-        "name": "Vue",
-        "image": "/src/assets/react.svg"
-    },
-    {
-        "id": 3,
-        "name": "Angular",
-        "image": "/src/assets/react.svg"
-    },
-    {
-        "id": 4,
-        "name": "Node",
-        "image": "/src/assets/react.svg"
-    }
+[
+  {
+    "id": 1,
+    "name": "React",
+    "image": "/src/assets/react.svg"
+  },
+  {
+    "id": 2,
+    "name": "Vue",
+    "image": "/src/assets/react.svg"
+  },
+  {
+    "id": 3,
+    "name": "Angular",
+    "image": "/src/assets/react.svg"
+  },
+  {
+    "id": 4,
+    "name": "Node",
+    "image": "/src/assets/react.svg"
+  }
 ]

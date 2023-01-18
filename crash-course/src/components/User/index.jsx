@@ -2,10 +2,10 @@
 
 export default function User({ AttributeUser }) {
 	return (
-		<div key={AttributeUser.id}>
+		<div>
 			<div>name : {AttributeUser.name}</div>
 			<div>id : {AttributeUser.id}</div>
-			<div>color: {AttributeUser.color}</div>
+			<div>color: {AttributeUser.age}</div>
 		</div>
 	)
 }
