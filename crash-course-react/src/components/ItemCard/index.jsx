@@ -1,11 +1,9 @@
-import React from "react"
+import React from "react" // c la props
 import classes from "./style.module.css"
-
-export default function ItemCard({ name, image, id }) {
+export default function ItemCard({ name, image }) {
 	return (
-		<div key={id} className={classes.cardContainer}>
-			<img src={image} alt="" />
-
+		<div className={classes.cardContainer}>
+			<img src={image} alt=""/> 
 			<h2>{name}</h2>
 			<button>add to card</button>
 		</div>

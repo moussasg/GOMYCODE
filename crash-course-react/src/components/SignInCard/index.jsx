@@ -1,15 +1,9 @@
-import React from "react"
-
 export default function SignInCard() {
-	const handleSubmit = (e) => {
-		e.preventDefault()
-
-		const dataForm = new FormData(e.target)
-		const data = Object.fromEntries(dataForm)
-
-		console.log(data)
+		const handleSubmit = (e) => { // e.target : li srate 3lih évenement
+		e.preventDefault() // bach ma yetroloadach site
+		const dataForm = new FormData(e.target)// FormData objet sera remplie par key-value dans chaque input 
+		console.log(Object.fromEntries(dataForm)) // fromEntries ( [key-value] tredo objet {key:value})
 	}
-
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
