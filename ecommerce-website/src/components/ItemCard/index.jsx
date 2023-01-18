@@ -1,8 +1,8 @@
 import React from "react"
-import classe from "./style.module.css"
+import Classe from "./style.module.css"
 export default function ItemCard({ OurPropProduct: { name, src, price } }) {
 	return (
-		<div className={classe.cardContainer}>
+		<div className={Classe.cardContainer}>
 			<h3>{name}</h3>
 			<img src={src} alt="shoe" />
 			<div>

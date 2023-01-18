@@ -11,7 +11,7 @@ function App() {
 			<NavBar/>
 			<CardButton />
 			<SignInCard />
-			<div className="itemsContainer">  dkhelna bel map dakhel data items.json
+			<div className="itemsContainer">
 				{items.map((el) => ( // ... => id={el.id} / id={el.name} / id={el.image} distructura nom,id,image pas la peine de faire props
 				<ItemCard {...el} /> // ... => divise des objets de array de data (items.json) 
 				))}
