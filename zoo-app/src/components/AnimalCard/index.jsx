@@ -1,10 +1,12 @@
 import React from "react"
 import classes from "./index.module.css"
 
-function AnimalCard({ name, image, description }) {
+function AnimalCard({ name, image, description, _id }) {
 	return (
 		<div className={classes.container}>
-			<p>{name}</p>
+			<a href={`/animals/${_id}`}>
+				<p>{name}</p>
+			</a>
 			<img src={image} alt="" />
 			<p>{description}</p>
 		</div>

@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "tshirt", "color": "blue" },
+    { "id": 2, "name": "jean", "color": "red" },
+    { "id": 3, "name": "tshirt", "color": "green" }
+]
