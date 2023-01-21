@@ -1,5 +1,4 @@
 import React from "react"
-
 export default function AnimalForm({ AddAnimal }) {
 	return (
 		<form onSubmit={(e) => AddAnimal(e)}>

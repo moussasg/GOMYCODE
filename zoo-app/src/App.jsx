@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
 import Animal from "./pages/Animal"
 import Home from "./pages/Home"
-
 function App() {
 	const [myanimals, setmyanimals] = useState([])
 	useEffect(() => {
@@ -12,7 +11,6 @@ function App() {
 		//dans useEffect: car on a besoin d'attendre que
 		// les components soit dans le document(mounted)
 		// pour ensuite ramener notre data
-
 		const getAnimals = async () => {
 			const res = await axios.get("https://zoo-api-nhvk.onrender.com/animals")
 			setmyanimals(res.data) //on met nos données dans notre useState
@@ -21,6 +19,7 @@ function App() {
 	}, [])
 
 	return (
+		// on a étulisé les Router ////////////////////////////////////////////////////
 		<div className="App">
 			<BrowserRouter>
 				<Routes>

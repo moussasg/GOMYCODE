@@ -3,7 +3,6 @@ import lion from '../assets/lion.jpeg';
 import monkey from '../assets/monkey.jpg';
 import mouche from '../assets/mouche.jpg';
 import toureau from "../assets/toureau.jpg";
-
 export const animals = [{
         name: 'Lion',
         image: lion,
