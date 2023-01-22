@@ -47,7 +47,7 @@ export default function Home({ myanimals, setmyanimals }) {
 			<p>Add Your Animal</p>
 			<AnimalForm AddAnimal={AddAnimal} />
 			{isLoading ? (
-				<div> isloading</div>
+				<div>isloading</div>
 			) : (
 				<div className={classes.animalsWrapper}>
 					{myanimals?.map((animal, i) => (

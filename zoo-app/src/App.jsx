@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import "./App.css"
 import Animal from "./pages/Animal"
 import Home from "./pages/Home"
@@ -21,18 +21,14 @@ function App() {
 	return (
 		// on a étulisé les Router ////////////////////////////////////////////////////
 		<div className="App">
-			<BrowserRouter>
-				<Routes>
-					<Route
-						path="/"
-						element={<Home myanimals={myanimals} setmyanimals={setmyanimals} />}
-					/>
-					<Route
-						path="/animals/:id"
-						element={<Animal myanimals={myanimals} />}
-					/>
-				</Routes>
-			</BrowserRouter>
+			<Routes>
+				<Route
+					path="/"
+					element={<Home myanimals={myanimals} setmyanimals={setmyanimals} />}
+				/>
+				{/* on a ajouter :id dans le path pour pouvoir recuperer l'id de l'animal */}
+				<Route path="/animals/:id" element={<Animal myanimals={myanimals} />} />
+			</Routes>
 		</div>
 	)
 }

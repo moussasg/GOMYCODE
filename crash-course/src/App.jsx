@@ -6,9 +6,10 @@ import User from "./components/User"
 import products from "./products.json"
 
 function App() {
-	const myref = useRef(null)
+	const myref = useRef(null) // null ici est la val initiale
+
 	const handleClick = () => {
-		console.log(myref.current)
+		console.log(myref.current) // .current pour acceder a l'element
 	}
 	const handleBtnClick = (e) => {
 		console.log("Button Component clicked")
@@ -21,6 +22,7 @@ function App() {
 
 	return (
 		<>
+			{/* ref={myref} c pour creer la reference sur un element */}
 			<button onClick={handleClick} ref={myref}>
 				Ref Button
 			</button>
