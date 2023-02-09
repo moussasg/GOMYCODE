@@ -1,26 +1,17 @@
-import { useState } from "react"
+import { useSelector } from "react-redux"
 import "swiper/css"
 import "./App.css"
 import MovieList from "./components/MovieList"
 import MoviesToWatch from "./components/MoviesToWatch"
-import { movies } from "./movies"
 function App() {
-	const [Movies, setMovies] = useState(movies)
+	const Movies = useSelector((state) => state.movies)
+	console.log(Movies)
 
-	const handleToggle = (id) => {
-		const newMovies = Movies.map((movie) => {
-			if (movie.id === id) {
-				return { ...movie, watched: !movie.watched }
-			}
-			return movie
-		})
-		setMovies(newMovies)
-	}
 	return (
 		<div className="App">
 			<h1>Redux Movie App</h1>
-			<MoviesToWatch Movies={Movies} handleToggle={handleToggle} />
-			<MovieList Movies={Movies} handleToggle={handleToggle} />
+			<MoviesToWatch />
+			<MovieList />
 		</div>
 	)
 }
