@@ -1,18 +1,13 @@
 import dotenv from "dotenv"
 import express from "express"
-
 import todoRouter from "./routes/todo.js"
 dotenv.config()
 const app = express()
-
-
 //body parser
 app.use(express.json())
 
 // define routers
 app.use("/todo", todoRouter)
-
-
 
 
 app.get("/ping", (req, res) => {
