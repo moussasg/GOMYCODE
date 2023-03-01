@@ -4,6 +4,5 @@
 /Challenges/DOM/**/*.css
 /crash-course-react
 /react-first-app/node_modules
-/node_modules
+node_modules
 README.md
-
